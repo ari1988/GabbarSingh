@@ -1,9 +1,16 @@
 #!/usr/bin/env node
 const pkgJSON = require('./package.json');
 const welcome = require("cli-welcome");
-
+const chalk = require("chalk");
+const log = console.log;
+const twitterClr = chalk.hex(`#1da1f2`).bold.inverse;
+const GithubClr = chalk.hex(`#6cc644`).bold.inverse;
+const linkedInClr = chalk.hex(`#0077b5`).bold.inverse;
+const gameClr = chalk.hex(`#6937ff`).bold.inverse;
+const dim = chalk.dim;
+const italic = chalk.italic;
 welcome({
-    title: pkgJSON.name,
+    title: `Arvind Singh`,
     tagLine: `Howdy, nice to meet ya!`,
     description: pkgJSON.description,
     version: pkgJSON.version,
@@ -14,16 +21,18 @@ welcome({
 
 })
 
-console.log(`
-Hi there, 👋 I am Arvind Singh aka Gabbar Singh 😉
+log(`
 
-DevOps Automation Enginner. My Motto: "Learn 📖 , Break 💢 and Implement 🧰." 😎 
-Talk to me about : Kubernetes, Docker , Nginx, Nagios, Test Automation
+${gameClr(` Arvind Singh aka Gabbar `)}
 
-🤝 Reach me at : 
-🐦 Twitter  https://twitter.com/0xArvind
-📖 Github   https://github.com/ari1988
-🥡 LinkedIn https://www.linkedin.com/in/arvindsingh88/
-🦖 Game     https://ari1988.github.io/
+${italic(`DevOps Automation Enginner. My Motto: "Learn 📖 , Break 💢 and Implement 🧰".
+Talk to me about : Kubernetes, Docker , Nginx, Nagios, Test Automation`)}
+
+🤝${dim.italic.bold(`Reach me at :`)}
+
+ ${twitterClr(` Twitter `)}  ${dim(`https://twitter.com/0xArvind`)}
+ ${GithubClr(` Github `)}   ${dim(`https://github.com/ari1988`)}
+ ${linkedInClr(` LinkedIn `)} ${dim(`https://www.linkedin.com/in/arvindsingh88/`)}
+ ${gameClr(` Game `)}     ${dim(`https://ari1988.github.io/`)}
 
 `);
