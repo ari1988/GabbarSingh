@@ -12,5 +12,13 @@
         "gabbar singh",
         "gabbar",
         "arvind"
-    ]
+    ],
+    "license": "MIT",
+    "main": "index.js",
+    "repository": "ari1988/GabbarSingh",
+    "author" : {
+        "name": "Arvind Singh",
+        "email": "arvindsingh.cs@hotmail.com",
+        "url": "https://twitter.com/0xArvind"
+    }
 }
