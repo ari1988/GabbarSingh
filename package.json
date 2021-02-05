@@ -1,7 +1,11 @@
 {
     "name": "gabbar",
     "version": "1.0.0",
+    "description": "This displays a quick Bio of Arvind Singh. Run `npx gabbar`",
     "bin": {
         "gabbar": "index.js"
+    },
+    "dependencies": {
+        "clear-any-console": "^1.16.2"
     }
 }
