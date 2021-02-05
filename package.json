@@ -1,6 +1,6 @@
 {
     "name": "gabbar",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Get to know Gabbar via `npx gabbar`",
     "bin": {
         "gabbar": "index.js"
@@ -16,7 +16,7 @@
     "license": "MIT",
     "main": "index.js",
     "repository": "ari1988/GabbarSingh",
-    "author" : {
+    "author": {
         "name": "Arvind Singh",
         "email": "arvindsingh.cs@hotmail.com",
         "url": "https://twitter.com/0xArvind"
